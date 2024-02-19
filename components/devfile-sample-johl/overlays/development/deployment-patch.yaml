@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-johl
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0041-tenant/tkrw-pr712-0075-0041-app/devfile-sample-johl@sha256:b21660dd56be5cf9651785c5b22e57732b150dd9b3720c8cd76cd05c06e0890d
+        name: my-nodejs
+        resources: {}
+status: {}
